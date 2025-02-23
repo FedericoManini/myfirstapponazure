@@ -1,0 +1,14 @@
+:root {
+    --primary: blueviolet;
+}
+
+.homeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.productPrice {
+    color: var(--primary);
+}
