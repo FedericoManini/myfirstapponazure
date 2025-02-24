@@ -8,7 +8,7 @@ from .forms import ProductForm
 def home(request):
     products = Product.objects.all()
     context = {"products": products}
-    return render(request, r"pages\home.html", context)
+    return render(request, "pages/home.html", context)
 
 
 def createProducts(request):
@@ -22,4 +22,4 @@ def createProducts(request):
         else:
             messages.warning(request, "Controlla i campi richiesti")
 
-    return render(request, r"pages\create_product.html", {'form': form})
+    return render(request, "pages/create_product.html", {'form': form})

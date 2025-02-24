@@ -4,7 +4,7 @@ from .settings import BASE_DIR
 
 SECRET_KEY = os.environ["MY_SECRET_KEY"]
 
-ALLOWED_HOSTS = [os.environ["WEBSITE_HOSTNAME"], "169.254.131.2:8000", "myfirstapponazure.azurewebsites.net/"]
+ALLOWED_HOSTS = [os.environ["WEBSITE_HOSTNAME"], "169.254.131.2:8000", "myfirstapponazure.azurewebsites.net"]
 
 CSRF_TRUSTED_ORIGINS = ["https://"+os.environ["WEBSITE_HOSTNAME"]]
 
